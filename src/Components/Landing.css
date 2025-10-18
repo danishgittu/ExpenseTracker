@@ -1,0 +1,144 @@
+
+a {
+  text-decoration: none;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Hero Section ===== */
+.landing-hero {
+  /* background: linear-gradient(135deg, #4a90e2, #6dd5fa); */
+  color: white;
+  text-align: center;
+  padding: 100px 20px 80px;
+  border-bottom-left-radius: 60px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  /* margin-top: 600px; */
+}
+
+.landing-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+}
+
+.landing-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  opacity: 0.95;
+}
+
+/* ===== Buttons ===== */
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 140px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #4a90e2;
+}
+
+.btn-primary:hover {
+  background-color: #e4e4e4;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Features Section ===== */
+.landing-features {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.landing-features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Footer ===== */
+.landing-footer {
+  margin-top: auto;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .landing-hero {
+    padding: 70px 20px 60px;
+  }
+
+  .landing-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .landing-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+}

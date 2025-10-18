@@ -1,0 +1,14 @@
+1.handling may fields through useReducer is a bit complex
+2.u have to give the same name to the elements just like u have given in initial State using name attribute in the element
+3.dont write onchange / onclick={()=> Function Name} avoid ()=> just give function name 
+4.to control the values of the fields u can use the state.fieldname as values to the element 
+5. u can reset the fields by passin initialState in the reducer case
+6. be careful while handling the input field values 
+    u can take input of the fields as follows in reducer 
+	ex case "take Values":
+		return {...state,[action.field]:action.value} // => [] bracket for action.field is necessary
+	then create a function to handle the payload
+	ex const handleInput = (e)=>{
+		const {name,value} = e.target  ===> note the e arguement will return the name attribute and value  
+		dispatch({type:"takeValues",field:name,value:value})    ==> ex "price":2000 / "2000"
+			} 

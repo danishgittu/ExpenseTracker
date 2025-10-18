@@ -1,0 +1,136 @@
+
+.LightMode {
+  color: black;
+  background-color: white;
+}
+.DarkMode{
+  background-color: rgb(28, 27, 27);
+  color: white;
+}
+/* Container */
+.dashboard-container {
+  width: 90%;
+  /* max-width: 1000px; */
+  margin: 10px auto;
+  /* background-color: white; */
+  padding: 5% 15%;
+  box-shadow: 6px 12px 32px black;
+  border-radius: 12px;
+}
+
+.dashboard-container h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  /* color: white; */
+}
+
+/* Summary Cards */
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.card {
+  
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  text-align: center;
+}
+
+.card .label {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card .amount {
+  /* flex: 2 1 250px; */
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Color coding */
+.card.income {
+  flex: 1 1 550px;
+  border-left: 6px solid #4CAF50;
+}
+
+.card.expense {
+  flex: 1 1 250px;
+  border-left: 6px solid #F44336;
+}
+
+.card.balance {
+  flex: 1 1 250px;
+  border-left: 6px solid #2196F3;
+}
+
+/* Charts Section */
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.chart-box {
+  flex: 1 1 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.chart-box h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.chart-placeholder {
+  background: #eef1f5;
+  /* height: 250px; */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 16px;
+  font-style: italic;
+}
+
+
+
+.Income{
+  color: green;
+}
+.Expenses{
+  color: red;
+}
+.yellow{
+  color:rgb(255, 94, 0)
+}
+.green{
+  color:green
+}
+.red{
+  color: red;
+}
+
+@media (max-width: 1025px) {
+  /* Styles for phones */
+.dashboard-container{
+  width: 95vw;
+  padding: 5% 0%;
+  margin: 0px;
+}
+
+
+
+}

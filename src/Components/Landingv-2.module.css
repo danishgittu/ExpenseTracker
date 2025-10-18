@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+}
+
+.DarkMode{
+    background-color: rgb(28, 27, 27);
+    color: white;
+}
+.LightMode{
+    background-color: white;
+    color: black;
+}
+
+
+h1{
+   font-size:  clamp(1.563rem, 1.3rem + 1.12vi, 2rem);
+}
+p{
+    font-size: clamp(0.75rem, 0.45rem + 1.28vi, 1.25rem);
+}
+.container{
+    /* background-color: white; */
+    min-height: 75vh;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 6px 12px 32px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* display: flex; */
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+   
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.GetStarted{
+    background-color: rgb(28, 27, 27);
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    margin-top: 12px;
+    transition: all 0.5s;
+    
+}
+.GetStarted:hover{
+    background-color: rgb(255, 165, 0);
+    border-color: black;
+}
+.GetStarted:hover > .link{
+    color: rgb(28, 27, 27);
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size:clamp(0.938rem, 0.786rem + 0.647vi, 1.563rem);
+}
+
+@media (max-width: 600px) {
+  /* Styles for phones */
+  .container{
+    width: 95vw;
+    height: calc(100vh - 40px);
+    margin: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for tablets */
+    .container{
+    width: 95vw;
+    margin: 0;
+  }
+}
